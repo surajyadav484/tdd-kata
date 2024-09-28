@@ -1,3 +1,5 @@
 export default function add(...args) {
-  console.log("add");
+  if (args.length === 0) {
+    return 0;
+  }
 }
