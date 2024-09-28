@@ -1,3 +1,6 @@
+//TODO:
+// 1. handle the case when separator is user has sent different separator but uses other separator in the input
+
 export default function add(args) {
   if (!args) {
     return 0;
@@ -25,6 +28,7 @@ export default function add(args) {
   }, 0);
 
   if (negativeNumbers.length) {
+    // TOD0: Throw exception instead of returning string
     return `Negative numbers not allowed ${negativeNumbers.join(",")}`;
   }
   return sum;
