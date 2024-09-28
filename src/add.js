@@ -1,5 +1,5 @@
-export default function add(...args) {
-  if (args.length === 0) {
+export default function add(args) {
+  if (!args) {
     return 0;
   }
 }
